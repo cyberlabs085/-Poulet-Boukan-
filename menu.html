@@ -1,204 +1,42 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Menu — Ô Poulet Boukané</title>
-  <meta name="description" content="La carte Ô Poulet Boukané : grillades, accompagnements, boissons et desserts.">
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Ô Poulet Boukané</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-  <header class="site-header">
-    <div class="nav-bar">
-      <a href="index.html" class="logo">Ô <span>Poulet</span> Boukané</a>
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Ouvrir le menu">
-        <span></span><span></span><span></span>
-      </button>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="about.html">À propos</a></li>
-        <li><a href="menu.html" aria-current="page">Menu</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </div>
-  </header>
-
-  <main>
-    <section class="page-banner">
-      <div class="container">
-        <span class="eyebrow">La carte</span>
-        <h1>Grillé, fumé, servi chaud.</h1>
-        <p>Filtrez par catégorie pour composer votre commande. Le niveau de piment 🔥 indique l'intensité de chaque plat.</p>
-      </div>
-    </section>
-
-    <section>
-      <div class="container">
-
-        <div class="filter-bar" role="group" aria-label="Filtrer le menu par catégorie">
-          <button class="filter-btn is-active" data-filter="tout">Tout</button>
-          <button class="filter-btn" data-filter="grillades">Grillades</button>
-          <button class="filter-btn" data-filter="accompagnements">Accompagnements</button>
-          <button class="filter-btn" data-filter="boissons">Boissons</button>
-          <button class="filter-btn" data-filter="desserts">Desserts</button>
-        </div>
-
-        <div class="menu-grid" id="menuGrid">
-
-          <article class="menu-item" data-category="grillades">
-            <div class="menu-item-top">
-              <h3>Demi-poulet boukané</h3>
-              <span class="price">2 500 F</span>
-            </div>
-            <p>Mariné, fumé puis grillé à la braise. Servi avec une sauce maison.</p>
-            <span class="spice" data-level="2"></span>
-          </article>
-
-          <article class="menu-item" data-category="grillades">
-            <div class="menu-item-top">
-              <h3>Poulet boukané entier</h3>
-              <span class="price">4 500 F</span>
-            </div>
-            <p>La recette signature, pour deux à trois personnes.</p>
-            <span class="spice" data-level="2"></span>
-          </article>
-
-          <article class="menu-item" data-category="grillades">
-            <div class="menu-item-top">
-              <h3>Brochettes de poulet</h3>
-              <span class="price">2 000 F</span>
-            </div>
-            <p>Trois brochettes marinées, grillées minute.</p>
-            <span class="spice" data-level="1"></span>
-          </article>
-
-          <article class="menu-item" data-category="grillades">
-            <div class="menu-item-top">
-              <h3>Ailes de poulet grillées</h3>
-              <span class="price">1 800 F</span>
-            </div>
-            <p>Portion de 6 ailes, marinade pimentée renforcée.</p>
-            <span class="spice" data-level="3"></span>
-          </article>
-
-          <article class="menu-item" data-category="accompagnements">
-            <div class="menu-item-top">
-              <h3>Attiéké</h3>
-              <span class="price">1 000 F</span>
-            </div>
-            <p>Semoule de manioc vapeur, servie nature ou relevée.</p>
-            <span class="spice" data-level="0"></span>
-          </article>
-
-          <article class="menu-item" data-category="accompagnements">
-            <div class="menu-item-top">
-              <h3>Frites de plantain</h3>
-              <span class="price">1 000 F</span>
-            </div>
-            <p>Plantain mûr, frit minute.</p>
-            <span class="spice" data-level="0"></span>
-          </article>
-
-          <article class="menu-item" data-category="accompagnements">
-            <div class="menu-item-top">
-              <h3>Riz sauté aux légumes</h3>
-              <span class="price">1 200 F</span>
-            </div>
-            <p>Riz sauté au wok, légumes de saison.</p>
-            <span class="spice" data-level="0"></span>
-          </article>
-
-          <article class="menu-item" data-category="accompagnements">
-            <div class="menu-item-top">
-              <h3>Salade créole</h3>
-              <span class="price">1 000 F</span>
-            </div>
-            <p>Tomate, oignon, piment doux, citron vert.</p>
-            <span class="spice" data-level="1"></span>
-          </article>
-
-          <article class="menu-item" data-category="boissons">
-            <div class="menu-item-top">
-              <h3>Bissap frais</h3>
-              <span class="price">800 F</span>
-            </div>
-            <p>Hibiscus infusé maison, peu sucré.</p>
-            <span class="spice" data-level="0"></span>
-          </article>
-
-          <article class="menu-item" data-category="boissons">
-            <div class="menu-item-top">
-              <h3>Jus de gingembre</h3>
-              <span class="price">800 F</span>
-            </div>
-            <p>Gingembre frais, citron, menthe.</p>
-            <span class="spice" data-level="0"></span>
-          </article>
-
-          <article class="menu-item" data-category="boissons">
-            <div class="menu-item-top">
-              <h3>Jus de bouye</h3>
-              <span class="price">1 000 F</span>
-            </div>
-            <p>Pulpe de fruit du baobab, lait, vanille.</p>
-            <span class="spice" data-level="0"></span>
-          </article>
-
-          <article class="menu-item" data-category="desserts">
-            <div class="menu-item-top">
-              <h3>Beignets sucrés</h3>
-              <span class="price">700 F</span>
-            </div>
-            <p>Beignets chauds, sucre vanillé.</p>
-            <span class="spice" data-level="0"></span>
-          </article>
-
-          <article class="menu-item" data-category="desserts">
-            <div class="menu-item-top">
-              <h3>Salade de fruits de saison</h3>
-              <span class="price">1 000 F</span>
-            </div>
-            <p>Sélection de fruits frais du jour.</p>
-            <span class="spice" data-level="0"></span>
-          </article>
-
-        </div>
-
-        <p id="emptyState" class="form-status" hidden style="background: var(--kraft); color: var(--smoke); margin-top: 1.5rem;">
-          Aucun plat dans cette catégorie pour le moment.
-        </p>
-      </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div>
-          <h3>Ô Poulet Boukané</h3>
-          <p>Poulet fumé et grillé à la braise, façon boukané, dans nos points de vente à Dakar.</p>
-        </div>
-        <div>
-          <h3>Navigation</h3>
-          <ul>
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="about.html">À propos</a></li>
-            <li><a href="menu.html">Menu</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </div>
-        <div>
-          <h3>Nous trouver</h3>
-          <p>Plateau · Sacré-Cœur · Almadies · Parcelles Assainies</p>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        © 2026 Ô Poulet Boukané — Projet réalisé dans le cadre du module Versioning, ESITEC Licence 1 Génie Informatique.
-      </div>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
+    <header class="site-header">
+        <h1>Ô Poulet Boukané</h1>
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="about.html">À Propos</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    
+    <main>
+        <h2>Notre Menu</h2>
+        <section class="menu-items">
+            <article>
+                <h3>Poulet Grillé</h3>
+                <p>Poulet fermier grillé avec épices locales - 8€</p>
+            </article>
+            <article>
+                <h3>Poulet Fumé</h3>
+                <p>Poulet fumé traditionnel - 10€</p>
+            </article>
+            <article>
+                <h3>Combo Menu</h3>
+                <p>Poulet grillé + frites + sauce - 15€</p>
+            </article>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Ô Poulet Boukané. Tous droits réservés.</p>
+    </footer>
 </body>
 </html>
