@@ -16,6 +16,20 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = navLinks.classList.toggle('is-open');
       navToggle.setAttribute('aria-expanded', String(isOpen));
     });
+    document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && navLinks.classList.contains('is-open')) {
+    navLinks.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.focus();
+  }
+});
+document.addEventListener('click', (event) => {
+  const isClickInsideNav = navToggle.contains(event.target) || navLinks.contains(event.target);
+  if (!isClickInsideNav && navLinks.classList.contains('is-open')) {
+    navLinks.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+  }
+});
 
     // Referme le menu mobile après un clic sur un lien
     navLinks.querySelectorAll('a').forEach((link) => {
