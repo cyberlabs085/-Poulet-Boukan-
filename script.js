@@ -16,6 +16,13 @@ document.addEventListener('DOMContentLoaded', () => {
       const isOpen = navLinks.classList.toggle('is-open');
       navToggle.setAttribute('aria-expanded', String(isOpen));
     });
+    document.addEventListener('keydown', (event) => {
+  if (event.key === 'Escape' && navLinks.classList.contains('is-open')) {
+    navLinks.classList.remove('is-open');
+    navToggle.setAttribute('aria-expanded', 'false');
+    navToggle.focus();
+  }
+});
 
     // Referme le menu mobile après un clic sur un lien
     navLinks.querySelectorAll('a').forEach((link) => {
