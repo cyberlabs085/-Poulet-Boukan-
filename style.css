@@ -12,9 +12,9 @@ body {
 }
 
 .site-header {
-    background-color: #F26B3A;
+    background-color: blue;
     color: white;
-    padding: 20px;
+    padding: 24px;
     text-align: center;
 }
 
